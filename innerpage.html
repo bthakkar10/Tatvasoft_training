@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innerpage</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/innerpage.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+
+<body >
+    <div class="container ">
+        <div class="horizonal-nav">
+            <div class="d-flex align-items-center">
+                <div class="left">
+                    <button onclick="openCloseMenu()" >
+                        <img src="./images/menu-bar.svg" class="menu-icon "  alt="menu-bar">
+                    </button>
+                    <img src="./images/header-logo.svg" class="header-logo" alt="">
+                   <!-- <div class="search"> -->
+                    <img src="images/search-icon.svg" class="search-icon" alt="">
+                    <span class="search">Search</span>
+                   <!-- <input type="text" class="form-control" placeholder="Search"> -->
+                    <!--  </div> -->
+                </div>
+                <div class="right">
+                    <img src="images/notification-icon.svg" class="notification-image" alt="">
+                    <img class="profile-image" src="images/profile.png" alt="">
+                    <p>John Doe</p>
+                    <img class="downward-arrow" src="images/downward-arrow.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+      
+        <div class="side-nav row">
+        <div class="col-lg-3">
+            <div class="navbar"  id="sideNav">
+                <ul id="allBtn nav navbar-nav">
+                    <li class=" nav-item  button">
+                        <a href="./dashboard.html"><img src="images/dashboard-active.svg" alt="">
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item active button">
+                        <a href="#"><img src="images/graph-default.svg" alt="">
+                            <p>Analysis</p>
+                        </a>
+                    </li>
+                    <li class="button">
+                        <a href="#"><img src="images/inbox-default.svg" alt="">
+                            <p>Inbox</p>
+                        </a>
+                    </li>
+                    <li class="button">
+                        <a href="#"><img src="images/clock-default.svg" alt="">
+                            <p>History</p>
+                        </a>
+                    </li>
+                    <li class="button">
+                        <a href="#"><img src="images/user-default.svg" alt="">
+                            <p>Users</p>
+                        </a>
+                    </li>
+                    <li class="button">
+                        <a href="#"><img src="images/maintenance-default.svg" alt="">
+                            <p>Maintanance</p>
+                        </a>
+                    </li>
+                    <li class="button">
+                        <a href="#"><img src="images/setting-default.svg" alt="">
+                            <p>Settings</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+
+        <div class="col-lg-9 col-sm-9 col-xl-9 container-fluid " id="container">
+            <div class="analysis-container container-fluid">
+               <h1> Analysis </h1>            
+            </div>
+            <div class="form ">
+                
+                <div class="col-md-12">
+                    <h4>One Column</h4>
+                    <input type="text" class="form-control " id="exampleFormControlInput1" placeholder="Name">
+                </div>
+                <div class="col-md-12">
+                <select class="form-select form-control" aria-placeholder="Dropdown" >
+                    <option selected>Dropdown</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Multiple line" rows="3"></textarea>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>Two Column</h4>
+                    <div class="row">
+                        <div class="col-md col-sm col-xl form-floating">
+                          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                        </div>
+                        <div class="col-md col-sm col-xl">
+                          <input type="text" class="form-control" placeholder="UserName" aria-label="UserName">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md col-sm col-xl">
+                          <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                        </div>
+                        <div class="col-md col-sm col-xl">
+                            <select class="form-select form-control" aria-placeholder="Dropdown" >
+                                <option selected>Dropdown</option>
+                                <option value="1">One</option>
+                              </select>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-12">
+                    <h4>Three Column</h4>
+                    <div class="row">
+                        <div class=" mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="floatingInputDisabled" disabled placeholder="disabled" aria-label="disabled" >
+                          </div>
+                      </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>Four Column</h4>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="Designation">
+                            
+                          </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Username" aria-label="UserName">
+                          </div>
+                          <div class="col">
+                            <select class="form-select form-control" aria-placeholder="Dropdown" disabled >
+                                <option selected>Dropdown</option>
+                                <option value="1">One</option>
+                              </select>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h3>Other Design Elements</h3>
+                    <h4>File Upload</h4>
+                    <button type="file"  class="file-upload" value="Upload"><img src="images/cloud-upload-icon.svg">Upload</button>
+                    <span style="color: #ADADAD;">No item selected</span>
+                </div>
+                <div class="col-md-12">
+                    <h4>Radio Button</h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1"> Option 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2" > Option 2</label>
+                      </div>
+                </div>
+                <div class="col-md-12">
+                    <h4>Checkbox</h4>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1"> Option 1</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2"> Option 2</label>
+                      </div>
+                </div>
+                <div class="col-md-12">
+                    <h4>SnackBar</h4>
+                    <div class="row ">
+                        <div class="alert col  alert-danger" role="alert">
+                            <img class="alert-icon" src="images/error-icon.svg">
+                            This is an error message
+                      </div>
+                      <div class="alert col offset-sm-1 alert-primary" role="alert">
+                          <img class="alert-icon" src="images/info-icon.svg">
+                            This is an information message
+                      </div>
+                      </div>
+                      <div class="row">
+                      <div class="alert col alert-warning" role="alert">
+                        <img class="alert-icon" src="images/warning-icon.svg">
+                            This is an warning message
+                      </div>
+                      <div class="alert col offset-sm-1 alert-success" role="alert">
+                        <img class="alert-icon" src="images/success-icon.svg">
+                            This is a success message
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <h4>Call To Action</h4>
+                    <button type="button" class="btn btn-danger">Primary</button>
+                    <button type="button" class="btn btn-outline-danger">Secondary</button>
+                </div>
+
+                <div>
+                    <h4>Tabs</h4>
+
+                    <div class="m-4">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link tab-list-item active" data-bs-toggle="tab">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#profile" class="nav-link tab-list-item " data-bs-toggle="tab">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#messages" class="nav-link tab-list-item" data-bs-toggle="tab">Messages</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="home">
+                               
+                                <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile">
+                               
+                                <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+                            </div>
+                            <div class="tab-pane fade" id="messages">
+                                
+                                <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </div> 
+    </div> 
+
+    <script >
+        const sideNavMenu=document.getElementById("sideNav");
+        const container=document.getElementById("container");
+        function openCloseMenu(){
+            if(sideNavMenu.style.display !== "none")
+            {
+                sideNavMenu.style.display="none";
+                container.style.width="100%";
+               
+    
+            }
+            else{
+                sideNavMenu.style.display="block";
+                container.style.width="75%";
+                
+            }
+        }
+    </script>
+    
+    
+</body>
+
+</html>

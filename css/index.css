@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin-top: 80px;
+}
+
+.hero-image {
+    width:  576px;
+    height: 576px;
+    border-radius: 50%;
+    border: 20px solid #FFFFFF;
+    box-shadow: 0px 4px 31px #0000000A;
+    opacity: 1;
+    margin: 80px 190px 0 0;
+  
+}
+
+.logo {
+    width:272px;
+height: 58px;
+margin-bottom: 20px;
+}
+
+.right {
+    margin-top: 120px;
+}
+
+.description {
+    font-size: 40px;
+    margin-bottom: 19px;
+}
+
+.description .expert {
+    color: #c8242f;
+    font-weight: bold;
+}
+
+.right .login-text {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+}
+
+.login-form .input-box {
+    background-color: #FFFFFF;
+    border: 1px solid #ADADAD;
+    padding: 11px;
+    text-align: left;
+    margin-bottom: 27px;
+    border-radius: 4px;
+    outline: none;
+   
+}
+
+input[type="submit"] {
+    background-color: #c8242f;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    margin-bottom: 18px;
+}
+
+.login-form a {
+    color: #ADADAD;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left:105px;
+    margin-bottom:20px
+}
+
+.register-text {
+    color: #ADADAD;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.register-text a {
+    color: #c8242f;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:1375px) {
+    .hero-image {
+        width: 576px;
+        margin: 80px 50px 0 0px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .hero-image {
+        width: 380px;
+        height:auto;
+        margin: 174px 40px 0 39px;
+    }
+    .logo {
+        width: 150px;
+    }
+    .description {
+        font-size: 23px;
+        margin-bottom: 19px;
+    }
+    .right{
+        margin:30px 15px 0 10px;
+    }
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 216px;
+    }
+    input[type="submit"] {
+        font-size: 14px;
+        border-radius: 17px;
+        width: 88px;
+        margin-bottom: 18px;
+    }
+    .input-box{
+        width: fit-content;
+    }
+    .login-form a {
+        font-size: 14px;
+        
+    }
+    .register-text {
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .hero-image {
+        width: 300px;
+        height:auto;
+        margin: 150px 15px 0 10px;
+    }
+    .right {
+        margin: 30px 0 0 0;
+        align-items: center !important;
+    }
+    .logo {
+        width: 234px;
+    }
+    .description {
+        font-size: 26px;
+        margin-bottom: 19px;
+        text-align: center;
+    }
+    .login-form {
+        display: flex;
+        flex-direction:column !important;
+        flex-wrap: wrap !important;
+        width: 373px;
+    }
+    
+    .login-form a {
+        font-size: 18px;
+        margin: 0 0 0 105px;
+    }
+    input[type="submit"] {
+        width: 120px;
+        height: 39px;
+        font-size: 18px;
+    }
+    .register-text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .login-form {
+        width: 337px;
+    }
+    .right{
+        margin: 30px 15px 0 20px;
+    }
+    .container{
+        flex-direction: column !important;
+    }
+    .login-form .input-box {
+        padding: 8px;
+        margin-bottom: 25px;
+    }
+    input[type="submit"] {
+        width: 96px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .login-form a,
+    .register-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .login-form {
+        width: 280px;
+    }
+    .login-form .input-box {
+        padding: 9px;
+        margin-bottom: 25px;
+    }
+    input[type="submit"] {
+        width: 100px;
+        height: 38px;
+        font-size: 16px;
+    }
+    .register-text {
+        font-size: 16px;
+    }
+    .login-form a {
+        font-size: 16px;
+        margin: 0 0 0 48px;
+    }
+}
